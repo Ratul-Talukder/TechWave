@@ -17,25 +17,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="nav-section">
-      <nav class="navbar container">
-        <div class="logo">
-          <h2>Tech<span class="wave">Wave</span></h2>
-        </div>
+    <header>
+      <section id="nav-section">
+        <nav class="navbar container">
+          <div class="logo">
+            <h2>Tech<span class="wave">Wave</span></h2>
+          </div>
 
-        <ul class="nav-menu-items">
-          <li class="menu-item">About</li>
-          <li class="menu-item">Episodes</li>
-          <li class="menu-item">Host</li>
-        </ul>
-        <button class="primary-btn">
-          Subscribe
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-        <div class="menu-icon">
-          <img src="assets/hamburger-menu.png" />
+          <ul class="nav-menu-items">
+            <li class="menu-item">About</li>
+            <li class="menu-item">Episodes</li>
+            <li class="menu-item">Host</li>
+          </ul>
+          <button class="primary-btn navbar-btn btn">
+            Subscribe
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="hamburger-icon">
+            <img src="assets/hamburger-menu.png" />
+          </div>
+        </nav>
+      </section>
+
+      <section class="hero-section">
+        <div class="hero-content container">
+          <div class="podcast-img-container">
+            <img src="assets/hero-circle.png" alt="" class="circle" />
+            <img src="assets/microphone.png" alt="" class="mic" />
+            <button class="badge">NEW</button>
+          </div>
+          <div class="hero-text-container">
+            <h1 class="hero-heading">TechWave</h1>
+            <p class="section-description">
+              Your daily dose of tech insights, productivity hacks,<br />and
+              personal growth
+            </p>
+            <div class="call-to-action-btn">
+              <button class="spotify-btn primary-btn btn">
+                <img class="btn-icon" src="assets/spotify.png" alt="" />
+                <span class="btn-text">Listen on Spotify</span>
+              </button>
+              <button class="message-btn btn">
+                <img src="assets/message.png" alt="" />
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
-      </nav>
-    </section>
+      </section>
+    </header>
   </body>
 </html>
