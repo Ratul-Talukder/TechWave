@@ -206,10 +206,9 @@ body {
 #why-choose-section {
   padding: 2rem 0;
   width: 100vw;
-  background-color: #230E3D;
+  background-color: #230e3d;
 }
 .feature-card-container {
-
   display: grid;
   gap: 1rem;
 }
@@ -217,12 +216,14 @@ body {
   padding: 1.5rem;
   background-color: #351165;
   border-radius: 24px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 .grid-item:hover {
-  transform: translateY(-5px);                 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);    
-  background-color: #3b2b6a;               
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #3b2b6a;
 }
 .card-title {
   font-size: 1rem;
@@ -231,7 +232,7 @@ body {
 }
 .card-description {
   font-size: 0.8rem;
-  color: #FFFFFF99;
+  color: #ffffff99;
 }
 /*-----------Responsive Design-----------*/
 @media screen and (min-width: 576px) {
@@ -279,7 +280,6 @@ body {
   .feature-card-container {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-  
   }
   .narrow {
     grid-column: span 2;
