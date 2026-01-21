@@ -35,8 +35,60 @@ body {
   border-bottom: 1px solid #412567;
   padding: 1.125rem 0;
 }
+.logo {
+  font-size: 1rem;
+}
+.nav-menu-items,
+.primary-btn {
+  display: none;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/*-----------Responsive Design-----------*/
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 20px;
+  }
+
+  /* navbar*/
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-menu-items {
+    display: flex;
+    list-style: none;
+    color: #ffffffe6;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 0.8rem;
+  }
+  .primary-btn {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10000px;
+    background: linear-gradient(
+      to top right,
+      #f7e93f 0%,
+      #fb09b4 51%,
+      #9100f8 100%
+    );
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 24px;
+  }
 }
