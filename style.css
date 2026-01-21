@@ -75,6 +75,11 @@ body {
 /*-----------hero-section-------*/
 .hero-section {
   padding: 2.5rem 0;
+  width: 100vw;
+  background-image: url("assets/hero-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 25%;
 }
 .hero-content {
   display: flex;
