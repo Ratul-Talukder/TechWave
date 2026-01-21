@@ -66,7 +66,8 @@ body {
 .section-heading {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /*----------------------------Header Section---------------------*/
@@ -171,6 +172,7 @@ body {
 /*--------------- Main-section--------------- */
 /* about-section */
 #about-section {
+  padding: 2rem 0;
   width: 100vw;
   text-align: center;
 }
@@ -200,6 +202,37 @@ body {
   color: #ffffffcc;
 }
 
+/* why-choose-section */
+#why-choose-section {
+  padding: 2rem 0;
+  width: 100vw;
+  background-color: #230E3D;
+}
+.feature-card-container {
+
+  display: grid;
+  gap: 1rem;
+}
+.grid-item {
+  padding: 1.5rem;
+  background-color: #351165;
+  border-radius: 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.grid-item:hover {
+  transform: translateY(-5px);                 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);    
+  background-color: #3b2b6a;               
+}
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.card-description {
+  font-size: 0.8rem;
+  color: #FFFFFF99;
+}
 /*-----------Responsive Design-----------*/
 @media screen and (min-width: 576px) {
   html {
@@ -239,5 +272,24 @@ body {
   /* about-section */
   .about-card-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* why-choose-section */
+
+  .feature-card-container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  
+  }
+  .narrow {
+    grid-column: span 2;
+    grid-row: span 2;
+    align-content: center;
+  }
+  .wide {
+    grid-column: span 4;
+  }
+  .normal {
+    grid-column: span 2;
   }
 }
